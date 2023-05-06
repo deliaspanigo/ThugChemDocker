@@ -15,4 +15,4 @@ docker build -t tc_new .
 
 
 # Inicio en Detach, y arranca de nuevo despues del reseteo
-docker run -d --rm -p 3838:3838 --restart unless-stopped --name tc_new tc_new
+docker run -d -p 3838:3838 --restart unless-stopped --name tc_new tc_new

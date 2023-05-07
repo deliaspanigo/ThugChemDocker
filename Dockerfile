@@ -4,6 +4,8 @@ RUN rm -rf /srv/shiny-server/*
 WORKDIR /srv/shiny-server/
 COPY ./app.R ./app.R
 
+EXPOSE 3838
+
 
 # basic shiny functionality
 RUN R -q -e "install.packages(c('devtools'))"

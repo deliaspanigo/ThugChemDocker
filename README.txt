@@ -4,8 +4,11 @@
 https://www.r-bloggers.com/2022/09/using-shiny-server-in-docker/
 
 
-# Codigos
-docker build -t tc_new .
+# Crea una imagen
+# docker build -t tc_new .
+
+# Crea una imagen desde cero cada veaz
+docker build --no-cache -t tc_new .
 
 # Inicio comun
 # docker run --rm -p 3838:3838 tc_new
